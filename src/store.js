@@ -32,17 +32,18 @@ export const store = new Vuex.Store({
             state.total = payload.total
             state.prevTotal = payload.total
       },
-      plus(state)
+      plus(state,producto)
       {
             state.total = state.prevTotal + 200
+            state.form.tazaOmate = producto
       
             //state.form.tazaOmate = plusPrice
            
       },
-      restarPlus(state)
+      restarPlus(state,producto)
       {
             state.total -= 200
-      
+            state.form.tazaOmate = producto
             //state.form.tazaOmate = plusPrice
            
       },

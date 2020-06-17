@@ -3,6 +3,7 @@
       <span>Bandeja: {{ this.$store.state.form.bandejaSeleccionada }}</span>
       <span>Total: {{ this.$store.state.total }}</span>
       <span>Tamaño: {{ this.$store.state.form.tamanio }}</span>
+      <span>Taza o Mate: {{ this.$store.state.form.tazaOmate }}</span>
         <div v-if="this.$store.state.step == 1">
           <PasoUno></PasoUno>
         </div>
